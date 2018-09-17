@@ -63,6 +63,7 @@
   max-height: 800px;
   display: flex;
   align-items: center;
+  background-position: center top;
 }
 
 .text-intro {
@@ -155,6 +156,9 @@ a.url {
 .project-description {
   padding: 1em;
   border-top: 1px solid rgba(34,36,38,.2);
+}
+.ui.hidden.content {
+  overflow: scroll;
 }
 
 #contact {

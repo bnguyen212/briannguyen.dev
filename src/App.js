@@ -51,28 +51,28 @@ class App extends Component {
               </Menu.Item>
               <Menu.Item
                 active={ activeIndex === 'about' }
-                color='red'
+                color='blue'
                 name='about'
                 onClick={ this.handleItemClick } >
                 <Icon name="info circle" size='large' /> About Me
               </Menu.Item>
               <Menu.Item
                 active={ activeIndex === 'skills' }
-                color='violet'
+                color='blue'
                 name='skills'
                 onClick={ this.handleItemClick } >
                 <Icon name="server" size='large' /> Skills
               </Menu.Item>
               <Menu.Item
                 active={ activeIndex === 'projects' }
-                color='green'
+                color='blue'
                 name='projects'
                 onClick={ this.handleItemClick } >
                 <Icon name="folder" size='large' /> Projects
               </Menu.Item>
               <Menu.Item
                 active={ activeIndex === 'contact' }
-                color='orange'
+                color='blue'
                 name='contact'
                 onClick={ this.handleItemClick } >
                 <Icon name="address card" size='large' /> Contact
@@ -244,7 +244,7 @@ class App extends Component {
           <div id="projects" onMouseOver={() => this.setState({ activeIndex: 'projects' })}>
             <h1 style={{marginBottom: '1em'}}>My Projects</h1>
             <Card.Group stackable={true} textAlign="center" itemsPerRow={3}>
-              <Card>
+              <Card color='orange'>
                 <Card.Content header='JobMate' meta='August 2018' />
                 <Reveal animated='move up'>
                   <Reveal.Content visible>
@@ -254,15 +254,15 @@ class App extends Component {
                     <Card.Description className="project-description" >
                       A Chrome extension to scan job board postings and save job details on Airtable for tracking purpose.<br /><br />
                       <span style={{fontSize: '12px'}}><u>Tech Stack</u>: jQuery, Bootstrap, Airtable API</span></Card.Description>
-                    <Card.Content textAlign="center">
-                      <a href="//github.com/bnguyen212/jobmate" rel="noopener noreferrer" target='_blank'><Button color="blue" size="tiny" icon><Icon name='github' size="large" /></Button></a>
-                      <a href="//chrome.google.com/webstore/detail/jobmate/dhehfnkpbknogddkkiabopofhkcimcle?hl=en" rel="noopener noreferrer" target='_blank'><Button color="red" size="tiny" icon><Icon name='arrow right' size="large" /></Button></a>
-                    </Card.Content>
                   </Reveal.Content>
                 </Reveal>
+                <Card.Content extra textAlign="center">
+                  <a href="//github.com/bnguyen212/jobmate" rel="noopener noreferrer" target='_blank'><Button color="black" size="tiny" icon><Icon name='github' size="large" /></Button></a>
+                  <a href="//chrome.google.com/webstore/detail/jobmate/dhehfnkpbknogddkkiabopofhkcimcle?hl=en" rel="noopener noreferrer" target='_blank'><Button color="green" size="tiny" icon><Icon name='arrow right' size="large" /></Button></a>
+                </Card.Content>
               </Card>
 
-              <Card>
+              <Card color='teal' >
                 <Card.Content header='Horizons App' meta='July 2018' />
                 <Reveal animated='move up'>
                   <Reveal.Content visible>
@@ -272,15 +272,15 @@ class App extends Component {
                     <Card.Description className="project-description" >
                       A staff & student dashboard to optimize administrative tasks (attendance, assign programming pairs, feedbacks, etc).<br /><br />
                       <span style={{fontSize: '12px'}}><u>Tech Stack</u>: React, Semantic UI, NodeJS, Express, MongoDB</span></Card.Description>
-                    <Card.Content textAlign="center">
-                      <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="blue" size="tiny" icon><Icon name='github' size="large" /></Button></a>
-                      <a href="//horizons-app.herokuapp.com" rel="noopener noreferrer" target='_blank'><Button color="red" size="tiny" icon><Icon name='arrow right' size="large" /></Button></a>
-                    </Card.Content>
                   </Reveal.Content>
                 </Reveal>
+                <Card.Content extra textAlign="center">
+                  <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="black" size="tiny" icon><Icon name='github' size="large" /></Button></a>
+                  <a href="//horizons-app.herokuapp.com" rel="noopener noreferrer" target='_blank'><Button color="green" size="tiny" icon><Icon name='arrow right' size="large" /></Button></a>
+                </Card.Content>
               </Card>
 
-              <Card>
+              <Card color='orange'>
                 <Card.Content header='Munchmates' meta='April 2018' />
                 <Reveal animated='move up'>
                   <Reveal.Content visible>
@@ -290,14 +290,15 @@ class App extends Component {
                     <Card.Description className="project-description" >
                       A mobile app to connect young professionals with nearby temporary food experiences.<br /><br />
                       <span style={{fontSize: '12px'}}><u>Tech Stack</u>: React Native, NodeJS, Express, PostgreSQL</span></Card.Description>
-                    <Card.Content textAlign="center">
-                      <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="blue" size="tiny" icon><Icon name='github' size="large" /></Button></a>
-                    </Card.Content>
                   </Reveal.Content>
                 </Reveal>
+                <Card.Content extra textAlign="center">
+                  <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="black" size="tiny" icon><Icon name='github' size="large" /></Button></a>
+                  <a href="//munchmates.club" rel="noopener noreferrer" target='_blank'><Button color="green" size="tiny" icon><Icon name='arrow right' size="large" /></Button></a>
+                </Card.Content>
               </Card>
 
-              <Card>
+              <Card color='teal' >
                 <Card.Content header='Reactive Docs' meta='March 2018' />
                 <Reveal animated='move up'>
                   <Reveal.Content visible>
@@ -307,14 +308,14 @@ class App extends Component {
                     <Card.Description className="project-description" >
                       A rich text editor desktop application with simultaneous collaboration feature.<br /><br />
                       <span style={{fontSize: '12px'}}><u>Tech Stack</u>: React, Electron, NodeJS, Express, DraftJS, Socket.io, MongoDB</span></Card.Description>
-                    <Card.Content textAlign="center">
-                      <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="blue" size="tiny" icon><Icon name='github' size="large" /></Button></a>
-                    </Card.Content>
                   </Reveal.Content>
                 </Reveal>
+                <Card.Content extra textAlign="center">
+                  <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target='_blank'><Button color="black" size="tiny" icon><Icon name='github' size="large" /></Button></a>
+                </Card.Content>
               </Card>
 
-              <Card>
+              <Card color='orange'>
                 <Card.Content header='Scheduler Bot' meta='March 2018' />
                 <Reveal animated='move up'>
                   <Reveal.Content visible>
@@ -324,11 +325,11 @@ class App extends Component {
                     <Card.Description className="project-description" >
                       An AI on Slack to automate the process of setting reminders and inviting people to an event on Google Calendar.<br /><br />
                       <span style={{fontSize: '12px'}}><u>Tech Stack</u>: NodeJS, Express, Slack API, DialogFlow, Google Calendar API, MongoDB </span></Card.Description>
-                    <Card.Content textAlign="center">
-                      <a href="//github.com/bnguyen212/Slack-Scheduler-Bot" rel="noopener noreferrer" target='_blank'><Button color="blue" size="tiny" icon><Icon name='github' size="large" /></Button></a>
-                    </Card.Content>
                   </Reveal.Content>
                 </Reveal>
+                <Card.Content extra textAlign="center">
+                  <a href="//github.com/bnguyen212/Slack-Scheduler-Bot" rel="noopener noreferrer" target='_blank'><Button color="black" size="tiny" icon><Icon name='github' size="large" /></Button></a>
+                </Card.Content>
               </Card>
 
             </Card.Group>
