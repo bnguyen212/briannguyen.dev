@@ -13,7 +13,6 @@ import reactiveDocs from './assets/ReactiveDocsExample.png';
 import schedulerBot from './assets/SchedulerBotExample.png';
 import { scroller } from 'react-scroll';
 
-
 class App extends Component {
   state = {
     activeIndex: 'intro',
@@ -38,55 +37,99 @@ class App extends Component {
     const { activeIndex } = this.state
     return (
       <div className="App">
-        <header className="small-header">
-          <h1 onClick={() => this.scrollTo('intro')} className="small-title">Brian Nguyen<span className="blinking-cursor">|</span></h1>
-          <Responsive minWidth={900}>
-            <Menu inverted size="small" compact={true} className="nav-bar">
-              <Menu.Item
-                active={ activeIndex === 'intro' }
-                color='blue'
-                name='intro'
-                onClick={ this.handleItemClick } >
-                <Icon name="home" size='large' /> Home
-              </Menu.Item>
-              <Menu.Item
-                active={ activeIndex === 'about' }
-                color='blue'
-                name='about'
-                onClick={ this.handleItemClick } >
-                <Icon name="info circle" size='large' /> About Me
-              </Menu.Item>
-              <Menu.Item
-                active={ activeIndex === 'skills' }
-                color='blue'
-                name='skills'
-                onClick={ this.handleItemClick } >
-                <Icon name="server" size='large' /> Skills
-              </Menu.Item>
-              <Menu.Item
-                active={ activeIndex === 'projects' }
-                color='blue'
-                name='projects'
-                onClick={ this.handleItemClick } >
-                <Icon name="folder" size='large' /> Projects
-              </Menu.Item>
-              <Menu.Item
-                active={ activeIndex === 'contact' }
-                color='blue'
-                name='contact'
-                onClick={ this.handleItemClick } >
-                <Icon name="address card" size='large' /> Contact
-              </Menu.Item>
-              <Menu.Item
-                href='//dropbox.com/s/8ghkc1oufkyqk0m/BrianNguyen_Resume.pdf'
-                target='_blank' >
-                <Icon name="file alternate" size='large' /> Résumé
-              </Menu.Item>
-            </Menu>
-          </Responsive>
-
-          <Responsive maxWidth={899}>
-            <Dropdown text="Navigations" compact button={true} wrapSelection={true} floating labeled icon="list layout" className="icon">
+        <Responsive minWidth={411} >
+          <header className="small-header">
+            <h1 onClick={() => this.scrollTo('intro')} className="small-title">Brian Nguyen<span className="blinking-cursor">|</span></h1>
+            <Responsive minWidth={900}>
+              <Menu inverted size="small" compact={true} className="nav-bar">
+                <Menu.Item
+                  active={ activeIndex === 'intro' }
+                  color='blue'
+                  name='intro'
+                  onClick={ this.handleItemClick } >
+                  <Icon name="home" size='large' /> Home
+                </Menu.Item>
+                <Menu.Item
+                  active={ activeIndex === 'about' }
+                  color='blue'
+                  name='about'
+                  onClick={ this.handleItemClick } >
+                  <Icon name="info circle" size='large' /> About Me
+                </Menu.Item>
+                <Menu.Item
+                  active={ activeIndex === 'skills' }
+                  color='blue'
+                  name='skills'
+                  onClick={ this.handleItemClick } >
+                  <Icon name="server" size='large' /> Skills
+                </Menu.Item>
+                <Menu.Item
+                  active={ activeIndex === 'projects' }
+                  color='blue'
+                  name='projects'
+                  onClick={ this.handleItemClick } >
+                  <Icon name="folder" size='large' /> Projects
+                </Menu.Item>
+                <Menu.Item
+                  active={ activeIndex === 'contact' }
+                  color='blue'
+                  name='contact'
+                  onClick={ this.handleItemClick } >
+                  <Icon name="address card" size='large' /> Contact
+                </Menu.Item>
+                <Menu.Item
+                  href='//dropbox.com/s/8ghkc1oufkyqk0m/BrianNguyen_Resume.pdf'
+                  target='_blank' >
+                  <Icon name="file alternate" size='large' /> Résumé
+                </Menu.Item>
+              </Menu>
+            </Responsive>
+            <Responsive maxWidth={899}>
+              <Dropdown text="Navigations" compact button={true} wrapSelection={true} floating labeled icon="list layout" className="icon">
+                <Dropdown.Menu direction="right" >
+                  <Dropdown.Item
+                    active={ activeIndex === 'intro' }
+                    name='intro'
+                    onClick={ this.handleItemClick } >
+                    <Icon name="home" size='large' /> Home
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    active={ activeIndex === 'about' }
+                    name='about'
+                    onClick={ this.handleItemClick } >
+                    <Icon name="info circle" size='large' /> About Me
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    active={ activeIndex === 'skills' }
+                    name='skills'
+                    onClick={ this.handleItemClick } >
+                    <Icon name="server" size='large' /> Skills
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    active={ activeIndex === 'projects' }
+                    name='projects'
+                    onClick={ this.handleItemClick } >
+                    <Icon name="folder" size='large' /> Projects
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    active={ activeIndex === 'contact' }
+                    name='contact'
+                    onClick={ this.handleItemClick } >
+                    <Icon name="address card" size='large' /> Contact
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    href='//dropbox.com/s/8ghkc1oufkyqk0m/BrianNguyen_Resume.pdf'
+                    target='_blank' >
+                    <Icon name="file alternate" size='large' /> Résumé
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Responsive>
+          </header>
+        </Responsive>
+        <Responsive maxWidth={410} >
+          <header className="small-header mobile-header">
+            <Dropdown compact button={true} wrapSelection={true} floating icon="list layout" className="icon">
               <Dropdown.Menu direction="right" >
                 <Dropdown.Item
                   active={ activeIndex === 'intro' }
@@ -125,39 +168,44 @@ class App extends Component {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-          </Responsive>
-        </header>
+            <h1 onClick={() => this.scrollTo('intro')} className="small-title">Brian Nguyen<span className="blinking-cursor">|</span></h1>
+          </header>
+        </Responsive>
         <div id="contents">
           <div id="intro" onMouseOver={() => this.setState({ activeIndex: 'intro' })}>
             <div className="heading">
-              <h1>FULL STACK DEVELOPER • LIFELONG LEARNER • TECH ENTHUSIAST</h1>
-              <h3><i>"Life isn't about finding yourself. Life is about creating yourself."</i></h3>
+              <Responsive maxWidth={500} >
+                <h1 className="titles">FULL STACK DEVELOPER<br />LIFELONG LEARNER<br />TECH ENTHUSIAST</h1>
+                <h5><i>"Life isn't about finding yourself. Life is about creating yourself."</i></h5>
+              </Responsive>
+              <Responsive minWidth={501}>
+                <h1 className="titles">FULL STACK DEVELOPER • LIFELONG LEARNER • TECH ENTHUSIAST</h1>
+                <h3><i>"Life isn't about finding yourself. Life is about creating yourself."</i></h3>
+              </Responsive>
             </div>
           </div>
           <div id="about" onMouseOver={() => this.setState({ activeIndex: 'about' })}>
-            <div className="subintro" >
-              <img src={ profile } alt="Brian" height="300px" />
-              <div style={{paddingLeft: '50px'}}>
-                <h1>About Me:</h1>
-                <div className="text-intro" ><Icon fitted={true} color='red' name='map marker alternate' /> San Francisco, CA</div>
-                <div className="text-intro" >
-                  I graduated from the <a className="url" href="//www.upenn.edu" target='_blank' rel="noopener noreferrer" >University of Pennsylvania</a> with a BA in Economics and Linguistics.
-                  I previously worked in IT Support and EB-5 Investor Relations before switching to Software Development.
-                  My journey as a developer began through an immersive semester of software engineering at the <a className="url" href="//joinhorizons.com" target='_blank' rel="noopener noreferrer" >Horizons School of Technology</a>.
-                  This experience helped me realize my passion for building products and also equipped me with the necessary skill set to do so.
-                </div>
-                <div className="text-intro" >
-                  I am always seeking new knowledge both in- and outside of the software industry.
-                  Let’s chat if you share any of my interests listed below!
-                  In my free time, I enjoy working on personal projects that involve unfamiliar frameworks, APIs, and libraries to sharpen my skills (while binge watching my favorite TV shows Suits and The Big Bang Theory of course).
-                  I highly value efficiency and aspire to use technology to maximize the efficiency level of everything around me.
-                </div>
-                <div className="text-intro" ><b>
-                  I am actively seeking full-time opportunities and would love to chat further if your company is hiring!
-                </b></div>
+            <div>
+              <h1 style={{margin: 0}}>About Me:</h1>
+              <img src={ profile } className="profile" alt="Brian" height="300px" />
+              <div className="text-intro" ><Icon fitted={true} color='red' name='map marker alternate' /> San Francisco, CA</div>
+              <div className="text-intro" >
+                I graduated from the <a className="url" href="//www.upenn.edu" target='_blank' rel="noopener noreferrer" >University of Pennsylvania</a> with a BA in Economics and Linguistics.
+                I previously worked in IT Support and EB-5 Investor Relations before switching to Software Development.
+                My journey as a developer began through an immersive semester of software engineering at the <a className="url" href="//joinhorizons.com" target='_blank' rel="noopener noreferrer" >Horizons School of Technology</a>.
+                This experience helped me realize my passion for building products and also equipped me with the necessary skill set to do so.
               </div>
+              <div className="text-intro" >
+                I am always seeking new knowledge both in- and outside of the software industry.
+                Let’s chat if you share any of my interests listed below!
+                In my free time, I enjoy working on personal projects that involve unfamiliar frameworks, APIs, and libraries to sharpen my skills (while binge watching my favorite TV shows Suits and The Big Bang Theory of course).
+                I highly value efficiency and aspire to use technology to maximize the efficiency level of everything around me.
+              </div>
+              <div className="text-intro" ><b>
+                I am actively seeking full-time opportunities and would love to chat further if your company is hiring!
+              </b></div>
             </div>
-            <h2>Interests:</h2>
+            <h2 style={{marginTop: 0}}>Interests:</h2>
             <div className="interests">
               <Button inverted color='red'>UI/UX Design</Button>
               <Button inverted color='red'>Product Management</Button>
@@ -173,34 +221,97 @@ class App extends Component {
             </div>
           </div>
           <div id="skills" onMouseOver={() => this.setState({ activeIndex: 'skills' })}>
-            <div className="category">
-              <h1 className="skill-header">Skills</h1>
+            <Responsive minWidth={701} >
+              <div className="category">
+                <h1 className="skill-header">Skills</h1>
+                <div className="skills">
+                  <Button.Group size="medium">
+                    <Button color='green'>Advanced/Fluent</Button>
+                    <Button color='violet'>Intermediate</Button>
+                    <Button color='teal'>Elementary</Button>
+                  </Button.Group>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Foreign Language</h3>
+                <div className="skills">
+                  <Button inverted color='green'>Vietnamese</Button>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Programming Language</h3>
+                <div className="skills">
+                  <Button inverted color='green'>JavaScript</Button>
+                  <Button inverted color='violet'>TypeScript</Button>
+                  <Button inverted color='teal'>Python</Button>
+                  <Button inverted color='teal'>Ruby</Button>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Frontend</h3>
+                <div className="skills">
+                  <Button inverted color='green'>HTML5</Button>
+                  <Button inverted color='green'>CSS3</Button>
+                  <Button inverted color='green'>React</Button>
+                  <Button inverted color='green'>Redux</Button>
+                  <Button inverted color='green'>React Native</Button>
+                  <Button inverted color='green'>jQuery</Button>
+                  <Button inverted color='green'>Bootstrap</Button>
+                  <Button inverted color='green'>Semantic UI</Button>
+                  <Button inverted color='green'>Handlebars</Button>
+                  <Button inverted color='teal'>Angular</Button>
+                  <Button inverted color='teal'>Vue</Button>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Backend</h3>
+                <div className="skills">
+                  <Button inverted color='green'>NodeJS</Button>
+                  <Button inverted color='green'>Express</Button>
+                  <Button inverted color='violet'>Firebase</Button>
+                  <Button inverted color='teal'>Ruby on Rails</Button>
+                  <Button inverted color='teal'>Django</Button>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Database</h3>
+                <div className="skills">
+                  <Button inverted color='green'>MongoDB</Button>
+                  <Button inverted color='green'>PostgreSQL</Button>
+                  <Button inverted color='teal'>Redis</Button>
+                </div>
+              </div>
+              <div className="category">
+                <h3 className="skill-category">Others</h3>
+                <div className="skills">
+                  <Button inverted color='green'>Git</Button>
+                  <Button inverted color='green'>Heroku</Button>
+                  <Button inverted color='green'>Webpack</Button>
+                </div>
+              </div>
+            </Responsive>
+            <Responsive maxWidth={700}>
+              <div><h1>Skills</h1>
               <div className="skills">
-                <Button.Group size="medium">
-                  <Button color='green'>Advanced/Fluent</Button>
+                <Button.Group compact size="small">
+                  <Button color='green'>Advanced</Button>
                   <Button color='violet'>Intermediate</Button>
                   <Button color='teal'>Elementary</Button>
                 </Button.Group>
-              </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Foreign Language</h3>
-              <div className="skills">
+              </div></div>
+              <h3>Foreign Language</h3>
+              <div className="skills-mobile">
                 <Button inverted color='green'>Vietnamese</Button>
               </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Programming Language</h3>
-              <div className="skills">
+              <h3 className="skill-mobile">Programming Language</h3>
+              <div className="skills-mobile">
                 <Button inverted color='green'>JavaScript</Button>
                 <Button inverted color='violet'>TypeScript</Button>
                 <Button inverted color='teal'>Python</Button>
                 <Button inverted color='teal'>Ruby</Button>
               </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Frontend</h3>
-              <div className="skills">
+              <h3 className="skill-mobile">Frontend</h3>
+              <div className="skills-mobile">
                 <Button inverted color='green'>HTML5</Button>
                 <Button inverted color='green'>CSS3</Button>
                 <Button inverted color='green'>React</Button>
@@ -213,37 +324,32 @@ class App extends Component {
                 <Button inverted color='teal'>Angular</Button>
                 <Button inverted color='teal'>Vue</Button>
               </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Backend</h3>
-              <div className="skills">
-                <Button inverted color='green'>Node</Button>
+              <h3 className="skill-mobile">Backend</h3>
+              <div className="skills-mobile">
+                <Button inverted color='green'>NodeJS</Button>
                 <Button inverted color='green'>Express</Button>
                 <Button inverted color='violet'>Firebase</Button>
                 <Button inverted color='teal'>Ruby on Rails</Button>
                 <Button inverted color='teal'>Django</Button>
               </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Database</h3>
-              <div className="skills">
+              <h3 className="skill-mobile">Database</h3>
+              <div className="skills-mobile">
                 <Button inverted color='green'>MongoDB</Button>
                 <Button inverted color='green'>PostgreSQL</Button>
                 <Button inverted color='teal'>Redis</Button>
               </div>
-            </div>
-            <div className="category">
-              <h3 className="skill-category">Others</h3>
-              <div className="skills">
+              <h3 className="skill-mobile">Others</h3>
+              <div className="skills-mobile">
                 <Button inverted color='green'>Git</Button>
                 <Button inverted color='green'>Heroku</Button>
                 <Button inverted color='green'>Webpack</Button>
               </div>
-            </div>
+            </Responsive>
+
           </div>
           <div id="projects" onMouseOver={() => this.setState({ activeIndex: 'projects' })}>
             <h1 style={{marginBottom: '1em'}}>My Projects</h1>
-            <Card.Group stackable={true} textAlign="center" itemsPerRow={3}>
+            <Card.Group stackable={true} itemsPerRow={3}>
               <Card color='orange'>
                 <Card.Content header='JobMate' meta='August 2018' />
                 <Reveal animated='move up'>
@@ -342,12 +448,22 @@ class App extends Component {
               <li>have a cool idea and want to collaborate with me</li>
               <li>simply just want to say hi :)</li>
             </ul>
-            <div className="links">
-              <a href="mailto:me@nguyenbrian.com" rel="noopener noreferrer" target='_blank'><img src={gmail} alt="GMail" height="75px" /></a>
-              <a href="//linkedin.com/in/brian-trong-nguyen" rel="noopener noreferrer" target='_blank'><img src={linkedin} alt="LinkedIn" height="75px" /></a>
-              <a href="//github.com/bnguyen212" rel="noopener noreferrer" target='_blank'><img src={github} alt="GitHub" height="75px" /></a>
-              <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target='_blank'><img src={instagram} alt="Instagram" height="75px" /></a>
-            </div>
+            <Responsive minWidth={601} className="links">
+              <div className="links">
+                <a href="mailto:me@nguyenbrian.com" rel="noopener noreferrer" target='_blank'><img src={gmail} alt="GMail" height="75px" /></a>
+                <a href="//linkedin.com/in/brian-trong-nguyen" rel="noopener noreferrer" target='_blank'><img src={linkedin} alt="LinkedIn" height="75px" /></a>
+                <a href="//github.com/bnguyen212" rel="noopener noreferrer" target='_blank'><img src={github} alt="GitHub" height="75px" /></a>
+                <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target='_blank'><img src={instagram} alt="Instagram" height="75px" /></a>
+              </div>
+            </Responsive>
+            <Responsive maxWidth={600} className="links">
+              <div className="links">
+                <a href="mailto:me@nguyenbrian.com" rel="noopener noreferrer" target='_blank'><img src={gmail} alt="GMail" height="50px" /></a>
+                <a href="//linkedin.com/in/brian-trong-nguyen" rel="noopener noreferrer" target='_blank'><img src={linkedin} alt="LinkedIn" height="50px" /></a>
+                <a href="//github.com/bnguyen212" rel="noopener noreferrer" target='_blank'><img src={github} alt="GitHub" height="50px" /></a>
+                <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target='_blank'><img src={instagram} alt="Instagram" height="50px" /></a>
+              </div>
+            </Responsive>
             <h3>© 2018 nguyenbrian.com</h3>
           </div>
         </div>
