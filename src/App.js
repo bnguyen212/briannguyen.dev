@@ -196,7 +196,6 @@ class App extends Component {
                 <Button inverted color='violet'>TypeScript</Button>
                 <Button inverted color='teal'>Python</Button>
                 <Button inverted color='teal'>Ruby</Button>
-                <Button inverted color='teal'>Java</Button>
               </div>
             </div>
             <div className="category">
@@ -223,7 +222,6 @@ class App extends Component {
                 <Button inverted color='violet'>Firebase</Button>
                 <Button inverted color='teal'>Ruby on Rails</Button>
                 <Button inverted color='teal'>Django</Button>
-                <Button inverted color='teal'>Flask</Button>
               </div>
             </div>
             <div className="category">
