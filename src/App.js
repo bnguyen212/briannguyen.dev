@@ -445,7 +445,7 @@ class App extends Component {
             <ul>
               <li>want to grab coffee or boba tea</li>
               <li>have suggestions for any of my projects</li>
-              <li>have a cool idea and want to collaborate with me</li>
+              <li>have a cool idea and want to collaborate</li>
               <li>simply just want to say hi :)</li>
             </ul>
             <Responsive minWidth={601} className="links">
