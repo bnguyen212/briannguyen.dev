@@ -1,0 +1,175 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.small-header {
+  background-color: #1b1c1d;
+  color: white;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-bottom: solid 1px white;
+  white-space: nowrap
+}
+
+.small-title {
+  font-size: 2.5em;
+  color: white;
+  margin: 0 20px 0 0;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 40px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+.nav-bar {
+  margin: 0;
+}
+
+#contents {
+  height: calc(100% - 80px);
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#intro {
+  background-image: url(./assets/home.jpg);
+  background-size: cover;
+  min-height: 100%;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.text-intro {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.heading {
+  background: rgba(0, 0, 0, 0.7);
+  height: 40%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5% 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+a.url {
+  text-decoration: underline;
+  color: black
+}
+
+#about {
+  display: flex;
+  padding: 5% 10%;
+  flex-direction: column;
+}
+
+.subintro {
+  display: flex;
+  flex-direction: row;
+}
+
+.interests, .skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.topic {
+  color: #2185d0;
+  border: solid 1px #2185d0;
+  border-radius: 5px;
+  background-color: rgba(33,133,208, 0.1);
+  padding: 1%;
+  margin: 1%;
+}
+
+#skills {
+  padding: 5% 10%;
+  background-color: #1b1c1d;
+  color: white;
+}
+
+.skills {
+  flex: 2.5;
+  margin-bottom: auto
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+}
+
+.skill-header {
+  text-align: right;
+  flex: 1;
+  margin-right: 3%;
+}
+
+.skill-category {
+  text-align: right;
+  flex: 1;
+  margin-right: 3%;
+  padding-top: 0.3em;
+}
+
+.ui.button.inverted {
+ margin-right: 10px;
+ margin-bottom: 10px;
+}
+
+#projects {
+  padding: 5% 10%;
+}
+
+.project-description {
+  padding: 1em;
+  border-top: 1px solid rgba(34,36,38,.2);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1c1d;
+  color: white;
+  padding: 5% 10%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 10% 5% 10%;
+  width: 80%;
+  justify-content: space-between
+}
