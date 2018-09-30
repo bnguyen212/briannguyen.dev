@@ -228,7 +228,7 @@ class App extends Component {
                   <Button.Group size="medium">
                     <Button color='green'>Advanced/Fluent</Button>
                     <Button color='violet'>Intermediate</Button>
-                    <Button color='teal'>Elementary</Button>
+                    <Button color='teal'>Basic</Button>
                   </Button.Group>
                 </div>
               </div>
@@ -259,8 +259,6 @@ class App extends Component {
                   <Button inverted color='green'>Bootstrap</Button>
                   <Button inverted color='green'>Semantic UI</Button>
                   <Button inverted color='green'>Handlebars</Button>
-                  <Button inverted color='teal'>Angular</Button>
-                  <Button inverted color='teal'>Vue</Button>
                 </div>
               </div>
               <div className="category">
@@ -268,9 +266,7 @@ class App extends Component {
                 <div className="skills">
                   <Button inverted color='green'>NodeJS</Button>
                   <Button inverted color='green'>Express</Button>
-                  <Button inverted color='violet'>Firebase</Button>
-                  <Button inverted color='teal'>Ruby on Rails</Button>
-                  <Button inverted color='teal'>Django</Button>
+                  <Button inverted color='teal'>Firebase</Button>
                 </div>
               </div>
               <div className="category">
@@ -278,7 +274,6 @@ class App extends Component {
                 <div className="skills">
                   <Button inverted color='green'>MongoDB</Button>
                   <Button inverted color='green'>PostgreSQL</Button>
-                  <Button inverted color='teal'>Redis</Button>
                 </div>
               </div>
               <div className="category">
@@ -286,7 +281,7 @@ class App extends Component {
                 <div className="skills">
                   <Button inverted color='green'>Git</Button>
                   <Button inverted color='green'>Heroku</Button>
-                  <Button inverted color='green'>Webpack</Button>
+                  <Button inverted color='violet'>Webpack</Button>
                 </div>
               </div>
             </Responsive>
