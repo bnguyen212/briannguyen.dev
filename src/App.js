@@ -296,7 +296,7 @@ class App extends Component {
                 <Button.Group compact size="small">
                   <Button color='green'>Advanced</Button>
                   <Button color='violet'>Intermediate</Button>
-                  <Button color='teal'>Elementary</Button>
+                  <Button color='teal'>Basic</Button>
                 </Button.Group>
               </div></div>
               <h3>Foreign Language</h3>
@@ -321,28 +321,23 @@ class App extends Component {
                 <Button inverted color='green'>Bootstrap</Button>
                 <Button inverted color='green'>Semantic UI</Button>
                 <Button inverted color='green'>Handlebars</Button>
-                <Button inverted color='teal'>Angular</Button>
-                <Button inverted color='teal'>Vue</Button>
               </div>
               <h3 className="skill-mobile">Backend</h3>
               <div className="skills-mobile">
                 <Button inverted color='green'>NodeJS</Button>
                 <Button inverted color='green'>Express</Button>
-                <Button inverted color='violet'>Firebase</Button>
-                <Button inverted color='teal'>Ruby on Rails</Button>
-                <Button inverted color='teal'>Django</Button>
+                <Button inverted color='teal'>Firebase</Button>
               </div>
               <h3 className="skill-mobile">Database</h3>
               <div className="skills-mobile">
                 <Button inverted color='green'>MongoDB</Button>
                 <Button inverted color='green'>PostgreSQL</Button>
-                <Button inverted color='teal'>Redis</Button>
               </div>
               <h3 className="skill-mobile">Others</h3>
               <div className="skills-mobile">
                 <Button inverted color='green'>Git</Button>
                 <Button inverted color='green'>Heroku</Button>
-                <Button inverted color='green'>Webpack</Button>
+                <Button inverted color='violet'>Webpack</Button>
               </div>
             </Responsive>
 
