@@ -632,7 +632,7 @@ class App extends Component {
                 activeIndex: "contact"
               })}>
             <h1>
-              Let's keep in touch & don't hesitate to reach out if you:
+              Let's keep stay touch / don't hesitate to reach out if you:
             </h1>
             <ul>
               <li>want to grab coffee or boba tea</li>
@@ -642,7 +642,7 @@ class App extends Component {
             </ul>
             <Responsive minWidth={601} className="links">
               <div className="links">
-                <a href="mailto:me@nguyenbrian.com" rel="noopener noreferrer" target="_blank">
+                <a href="mailto:contact@briannguyen.dev" rel="noopener noreferrer" target="_blank">
                   <img src={gmail} alt="GMail" height="75px" />
                 </a>
                 <a href="//linkedin.com/in/brian-trong-nguyen" rel="noopener noreferrer" target="_blank">
@@ -658,7 +658,7 @@ class App extends Component {
             </Responsive>
             <Responsive maxWidth={600} className="links">
               <div className="links">
-                <a href="mailto:me@nguyenbrian.com" rel="noopener noreferrer" target="_blank">
+                <a href="mailto:contact@briannguyen.dev" rel="noopener noreferrer" target="_blank">
                   <img src={gmail} alt="GMail" height="50px" />
                 </a>
                 <a href="//linkedin.com/in/brian-trong-nguyen" rel="noopener noreferrer" target="_blank">
@@ -672,7 +672,7 @@ class App extends Component {
                 </a>
               </div>
             </Responsive>
-            <h3>© 2018 nguyenbrian.com</h3>
+            <h3>© 2019 briannguyen.dev</h3>
           </div>
         </div>
       </div>;
