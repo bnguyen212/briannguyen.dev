@@ -632,7 +632,7 @@ class App extends Component {
                 activeIndex: "contact"
               })}>
             <h1>
-              Let's keep stay touch / don't hesitate to reach out if you:
+              Let's stay in touch / don't hesitate to reach out if you:
             </h1>
             <ul>
               <li>want to grab coffee or boba tea</li>
