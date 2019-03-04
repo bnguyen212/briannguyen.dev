@@ -190,7 +190,7 @@ class App extends Component {
                 UI/UX Design
               </Button>
               <Button inverted color="red">
-                Product Management
+                Product Development
               </Button>
               <Button inverted color="red">
                 FinTech
