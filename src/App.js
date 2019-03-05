@@ -536,11 +536,6 @@ class App extends Component {
                       <Icon name="github" size="large" />
                     </Button>
                   </a>
-                  <a href="//horizons-app.herokuapp.com" rel="noopener noreferrer" target="_blank">
-                    <Button color="green" size="tiny" icon>
-                      <Icon name="arrow right" size="large" />
-                    </Button>
-                  </a>
                 </Card.Content>
               </Card>
 
@@ -565,11 +560,6 @@ class App extends Component {
                   <a href="//github.com/bnguyen212/horizons-app" rel="noopener noreferrer" target="_blank">
                     <Button color="black" size="tiny" icon>
                       <Icon name="github" size="large" />
-                    </Button>
-                  </a>
-                  <a href="//munchmates.club" rel="noopener noreferrer" target="_blank">
-                    <Button color="green" size="tiny" icon>
-                      <Icon name="arrow right" size="large" />
                     </Button>
                   </a>
                 </Card.Content>
