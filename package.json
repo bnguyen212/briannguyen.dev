@@ -18,5 +18,11 @@
     "eject": "react-scripts eject",
     "start": "serve -s build",
     "heroku-postbuild": "npm run build"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

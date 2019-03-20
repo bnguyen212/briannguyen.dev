@@ -156,26 +156,23 @@ class App extends Component {
               })}>
             <div>
               <h1 style={{ margin: 0 }}>About Me:</h1>
-              <img src={profile} className="profile" alt="Brian" height="300px" />
+              <img src={profile} className="profile" alt="Brian" height="250px" />
               <div className="text-intro">
                 <Icon fitted={true} color="red" name="map marker alternate" /> San Francisco, CA
               </div>
               <div className="text-intro">
                 I graduated from the <a className="url" href="//www.upenn.edu" target="_blank" rel="noopener noreferrer">
                   University of Pennsylvania
-                </a> with a BA in Economics and Linguistics. I previously worked in IT Support and EB-5 Investor Relations before switching to Software Development. My journey as a developer began through an immersive semester of software engineering at the <a className="url" href="//joinhorizons.com" target="_blank" rel="noopener noreferrer">
-                  Horizons School of Technology
-                </a>. This experience helped me realize my passion for building products and also equipped me with the necessary skill set to do so.
+                </a> with a BA in Economics and Linguistics.
+                I previously worked in IT Support and EB-5 Investor Relations before switching to Software Development.
+                My journey as a developer began through an immersive semester of software engineering at the <u>Horizons School of Technology</u>, where I also worked as the Junior Instructor for the subsequent summer cohorts.
+                I currently work at <u>Make School</u>, a 21st century college for applied computer science, to support instructors and students in the frontend & backend web development tracks.
               </div>
               <div className="text-intro">
-                I am always seeking new knowledge both in- and outside of
-                the software industry. Let’s chat if you share any of my
-                interests listed below! In my free time, I enjoy working on
-                personal projects that involve unfamiliar frameworks, APIs,
-                and libraries to sharpen my skills (while binge watching my
-                favorite TV shows Suits and The Big Bang Theory of course).
-                I highly value efficiency and aspire to use technology to
-                maximize the efficiency level of everything around me.
+                I love building products that improve people's lives and I aspire to use technology to
+                maximize the efficiency level of everything around me. I am always looking for opportunities
+                to collaborate, especially projects that involve a library or framework I am unfamiliar with.
+                Let’s chat if you have an idea or share any of my interests listed below.
               </div>
               <div className="text-intro">
                 <b>
