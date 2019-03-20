@@ -4,7 +4,7 @@ import './App.css';
 import profile from './assets/profile.jpg'
 import gmail from './assets/Gmail-logo.png';
 import linkedin from './assets/LinkedIn-Logo.png';
-import instagram from './assets/Instagram-Logo.png';
+// import instagram from './assets/Instagram-Logo.png';
 import github from './assets/github-logo.png';
 import jobmate from './assets/JobMateExample.png';
 import munchmates from './assets/MunchmatesExample.png';
@@ -187,22 +187,22 @@ class App extends Component {
             <h2 style={{ marginTop: 0 }}>Interests:</h2>
             <div className="interests">
               <Button inverted color="red">
-                UI/UX Design
-              </Button>
-              <Button inverted color="red">
                 Product Development
               </Button>
               <Button inverted color="red">
-                FinTech
+                UI/UX Design
+              </Button>
+              <Button inverted color="red">
+                Education
+              </Button>
+              <Button inverted color="red">
+                Social Impact
               </Button>
               <Button inverted color="red">
                 HealthTech
               </Button>
               <Button inverted color="red">
-                EdTech
-              </Button>
-              <Button inverted color="red">
-                Social Impact
+                FinTech
               </Button>
               <Button inverted color="red">
                 Data Science
@@ -641,9 +641,9 @@ class App extends Component {
                 <a href="//github.com/bnguyen212" rel="noopener noreferrer" target="_blank">
                   <img src={github} alt="GitHub" height="75px" />
                 </a>
-                <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target="_blank">
+                {/* <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target="_blank">
                   <img src={instagram} alt="Instagram" height="75px" />
-                </a>
+                </a> */}
               </div>
             </Responsive>
             <Responsive maxWidth={600} className="links">
@@ -657,9 +657,9 @@ class App extends Component {
                 <a href="//github.com/bnguyen212" rel="noopener noreferrer" target="_blank">
                   <img src={github} alt="GitHub" height="50px" />
                 </a>
-                <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target="_blank">
+                {/* <a href="//instagram.com/6rian.n9uyen/" rel="noopener noreferrer" target="_blank">
                   <img src={instagram} alt="Instagram" height="50px" />
-                </a>
+                </a> */}
               </div>
             </Responsive>
             <h3>© 2019 briannguyen.dev</h3>
