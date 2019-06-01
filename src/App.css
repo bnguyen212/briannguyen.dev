@@ -4,36 +4,46 @@
   height: 100%;
 }
 
-.small-header {
+.site-name {
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.mobile-title{
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.nav-bar {
+  margin: 0;
+}
+
+header {
   background-color: #1b1c1d;
   color: white;
   display: flex;
   height: 80px;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-bottom: solid 1px white;
-  white-space: nowrap
-}
-
-.mobile-header {
   padding-left: 2em;
+  padding-right: 2em;
+  border-bottom: solid 1px white;
+  white-space: nowrap;
 }
 
-.small-title {
-  font-size: 2.5em;
-  color: white;
-  margin: 0 20px 0 0;
-}
-
-.titles {
-  font-size: 2em;
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blinking-cursor {
-  font-weight: 100;
-  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 75;
+  font-size: 50px;
   color: #2E3D48;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -51,8 +61,8 @@
   }
 }
 
-.nav-bar {
-  margin: 0;
+::-webkit-scrollbar {
+  display: none;
 }
 
 #contents {
@@ -60,8 +70,9 @@
   overflow: scroll;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.section_header {
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 5px;
 }
 
 #intro {
@@ -74,14 +85,90 @@
   background-position: center top;
 }
 
-.text-intro {
+.titles {
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.quote {
+  margin-top: 3%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1301px) {
+  .titles {
+    font-size: 40px;
+  }
+
+  .quote {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 851px) {
+  .titles {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 701px),
+(max-width: 350px) {
+  .titles {
+    font-size: 20px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quote {
+    font-size: 20px;
+  }
+}
+
+.text-intro,
+.text-intro > *,
+.text-intro > * > * {
+  font-size: 15px;
   padding-bottom: 10px;
+  text-align: justify;
+  color: black;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.location {
+  font-size: 15px;
+  margin-left: 1%;
+  padding: 0;
+  font-weight: bold;
+  vertical-align: middle;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px
 }
 
 .profile {
   float: left;
   clear: left;
-  margin: 0 2em 1em 0;
+  margin: 1em 2em 1em 0;
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  .text-intro.loc {
+    text-align: center;
+  }
 }
 
 .heading {
@@ -96,20 +183,10 @@
   justify-content: space-between
 }
 
-a.url {
-  text-decoration: underline;
-  color: black
-}
-
 #about {
   display: flex;
   padding: 5% 10%;
   flex-direction: column;
-}
-
-.subintro {
-  display: flex;
-  flex-direction: row;
 }
 
 .interests, .skills {
@@ -118,32 +195,10 @@ a.url {
   flex-wrap: wrap;
 }
 
-.topic {
-  color: #2185d0;
-  border: solid 1px #2185d0;
-  border-radius: 5px;
-  background-color: rgba(33,133,208, 0.1);
-  padding: 1%;
-  margin: 1%;
-}
-
 #skills {
   padding: 5% 10%;
   background-color: #1b1c1d;
   color: white;
-}
-
-.skills {
-  flex: 2.5;
-  margin-bottom: auto
-}
-
-.skill-mobile {
-  margin-top: 0;
-}
-
-.skills-mobile {
-  margin-left: 2em;
 }
 
 .category {
@@ -158,27 +213,64 @@ a.url {
   margin-right: 3%;
 }
 
-.skill-category {
+.skill-name {
   text-align: right;
   flex: 1;
   margin-right: 3%;
   padding-top: 0.3em;
+  letter-spacing: 1px;
+  font-family: 'Indie Flower', cursive;
 }
 
-.ui.button.inverted {
- margin-right: 10px;
- margin-bottom: 10px;
+.skills, .skills-legend {
+  flex: 2;
+  margin-bottom: auto
+}
+
+.skill-name-mobile {
+  margin-top: 10px !important;
+  font-family: 'Indie Flower', cursive;
+}
+
+.skills-mobile, .skills-legend-mobile {
+  margin-left: 2em;
+}
+
+.ui.button.inverted, .ui.buttons {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.non-click {
+  cursor: default !important;
 }
 
 #projects {
   padding: 5% 10%;
 }
 
+.header {
+  font-family: 'Shadows Into Light', cursive !important;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px !important;
+}
+
+.meta {
+  text-align: center;
+}
+
+.ui.card, ui.card:first-child {
+  margin-top: 30px !important;
+}
+
 .project-description {
   padding: 1em;
   border-top: 1px solid rgba(34,36,38,.2);
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
-
 
 #contact {
   display: flex;
@@ -195,4 +287,9 @@ a.url {
   padding: 3% 0;
   width: 100%;
   justify-content: space-evenly
+}
+
+.copyright {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
 }
