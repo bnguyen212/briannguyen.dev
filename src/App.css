@@ -73,6 +73,7 @@ header {
 .section_header {
   font-family: 'Kaushan Script', cursive;
   letter-spacing: 5px;
+  font-size: 35px;
 }
 
 #intro {
