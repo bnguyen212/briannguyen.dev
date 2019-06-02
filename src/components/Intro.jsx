@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
+import '../css/Intro.css';
 import { Responsive } from 'semantic-ui-react';
-
 
 const Intro = ({navigate}) => {
   return (

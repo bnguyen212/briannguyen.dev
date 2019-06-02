@@ -1,7 +1,42 @@
 import React from 'react';
+import '../css/Navbar.css';
 import { Menu, Icon, Responsive, Dropdown } from 'semantic-ui-react';
 
-const Navbar = ({nav, activeIndex, handleItemClick, scrollTo}) => {
+const Navbar = ({activeIndex, handleItemClick, scrollTo}) => {
+
+  const nav = [
+    {
+      directory: 'intro',
+      display: 'Home',
+      icon: 'home'
+    },
+    {
+      directory: 'about',
+      display: 'About Me',
+      icon: 'info circle'
+    },
+    {
+      directory: 'skills',
+      display: 'Skills',
+      icon: 'server'
+    },
+    {
+      directory: 'projects',
+      display: 'Projects',
+      icon: 'folder'
+    },
+    {
+      directory: 'contact',
+      display: 'Contact',
+      icon: 'address card'
+    },
+    {
+      url: '//dropbox.com/s/8ghkc1oufkyqk0m/BrianNguyen_Resume.pdf',
+      display: 'Résumé',
+      icon: 'file alternate'
+    }
+  ]
+
   return (
     <header>
       <Responsive className="nav" minWidth={501}>
@@ -79,7 +114,7 @@ const Navbar = ({nav, activeIndex, handleItemClick, scrollTo}) => {
             })}
           </Dropdown.Menu>
         </Dropdown>
-        <h2 onClick={() => scrollTo("intro")} className="site-name mobile-title">
+        <h2 onClick={() => scrollTo("intro")} className="site-name mobile">
           Brian Nguyen<span className="blinking-cursor">|</span>
         </h2>
       </Responsive>

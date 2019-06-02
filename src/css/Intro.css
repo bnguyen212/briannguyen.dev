@@ -1,0 +1,117 @@
+#intro {
+  background-image: url(../assets/home.jpg);
+  background-size: cover;
+  min-height: 100%;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  background-position: center top;
+}
+
+.heading {
+  background: rgba(0, 0, 0, 0.7);
+  height: 40%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5% 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.titles {
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.quote {
+  margin-top: 3%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  animation: moveInRight 2s ease-out;
+}
+
+@media screen and (min-width: 1301px) {
+  .titles {
+    font-size: 40px;
+  }
+
+  .quote {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 851px) {
+  .titles {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 701px),
+(max-width: 350px) {
+  .titles {
+    font-size: 20px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quote {
+    font-size: 20px;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../css/Bio.css';
 import { Icon } from 'semantic-ui-react';
-import profile from '../assets/profile.jpg'
+import profile from '../assets/profile.jpg';
 
 const Bio = () => {
   return (
     <div id="biography">
-      <h1 style={{ margin: 0 }} className="section_header">About Me:</h1>
+      <h1 className="section_header">About Me:</h1>
       <img src={profile} className="profile" alt="Brian Nguyen" height="250px" />
       <div className="text-intro loc">
         <Icon fitted={true} size="large" color="red" name="map marker alternate" /> <span className="location">San Francisco, CA</span>

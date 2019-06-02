@@ -1,0 +1,57 @@
+header {
+  background-color: #1b1c1d;
+  color: white;
+  display: flex;
+  height: 80px;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-bottom: solid 1px white;
+  white-space: nowrap;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.mobile {
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.blinking-cursor {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 75;
+  font-size: 50px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+
+  50% {
+    color: white;
+  }
+}
+
+.nav-bar {
+  margin: 0;
+}

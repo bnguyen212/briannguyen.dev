@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.contents {
+  height: calc(100% - 80px);
+  overflow: scroll;
+}
+
+.section_header {
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: 5px;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#about {
+  display: flex;
+  padding: 5% 10%;
+  flex-direction: column;
+}
+
+.non-click {
+  cursor: default !important;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+}

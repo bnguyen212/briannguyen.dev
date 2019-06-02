@@ -1,0 +1,42 @@
+.text-intro,
+.text-intro>*,
+.text-intro>*>* {
+  font-size: 15px;
+  padding-bottom: 10px;
+  text-align: justify;
+  color: black;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.location {
+  margin-left: 1%;
+  font-weight: bold;
+  vertical-align: middle;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px
+}
+
+.profile {
+  float: left;
+  clear: left;
+  margin: 1em 2em 2em 0;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    display: block;
+    float: none;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+  }
+
+  .profile:hover {
+    border-radius: 0;
+  }
+
+  .text-intro.loc {
+    text-align: center;
+  }
+}

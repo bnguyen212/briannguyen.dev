@@ -1,0 +1,39 @@
+.interests {
+  margin-top: 2%
+}
+
+.interests-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.interest-item {
+  position: relative;
+  display: inline-block;
+}
+
+.interest-item:hover::after,
+.interest-item:focus::after,
+.interest-item:active::after {
+  transform: translateY(11px) scale(1.1);
+  opacity: 1;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff695e;
+}
+
+.interest-item::after {
+  content: "#";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+  text-align: left;
+  font-size: 40px;
+  opacity: 0;
+  color: #ff695e;
+}
