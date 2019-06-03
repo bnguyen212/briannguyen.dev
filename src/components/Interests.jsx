@@ -8,7 +8,7 @@ const Interests = () => {
 
   return (
     <div className="interests">
-      <h1 className="section_header">Interests:</h1>
+      <h1><span className="section_header">Interests</span></h1>
       <div className="interests-container">
         {interests.map(i => (
           <Button className="interest-item non-click" inverted size="medium" key={i} color="red">

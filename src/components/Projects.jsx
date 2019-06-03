@@ -55,7 +55,7 @@ const Projects = ({navigate, screenWidth}) => {
 
   return (
     <div id="projects" onMouseOver={navigate}>
-      <h1 className="section_header">My Projects</h1>
+      <h1><span className="section_header">My Projects</span></h1>
       <Card.Group className="projects-container" stackable={true} itemsPerRow={screenWidth > 1100 ? 3 : 2}>
         {projects.map((project, index) => (
           <Card key={project.name} color={index%2 ? "teal" : "orange"}>

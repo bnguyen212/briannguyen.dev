@@ -30,6 +30,7 @@ class App extends Component {
       containerId: 'contents',
       offset: -80
     })
+    this.setState({ activeIndex: name })
   }
 
   handleItemClick = (e, { name }) => {
@@ -43,7 +44,7 @@ class App extends Component {
         <Navbar activeIndex={this.state.activeIndex}
                 handleItemClick={this.handleItemClick}
                 scrollTo={this.scrollTo} />
-        <div className="contents">
+        <div id="contents" className="contents">
           <Intro navigate={() => this.setState({ activeIndex: "intro" })} />
           <About navigate={() => this.setState({ activeIndex: "about" })} />
           <Skills navigate={() => this.setState({ activeIndex: "skills" })}

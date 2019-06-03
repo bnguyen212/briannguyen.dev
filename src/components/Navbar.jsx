@@ -41,7 +41,7 @@ const Navbar = ({activeIndex, handleItemClick, scrollTo}) => {
     <header>
       <Responsive className="nav" minWidth={501}>
         <h1 onClick={() => scrollTo("intro")} className="site-name">
-          Brian Nguyen<span className="blinking-cursor">|</span>
+          <span className="brian">Brian Nguyen</span><span className="blinking-cursor">|</span>
         </h1>
         <Responsive minWidth={1000}>
           <Menu inverted size="small" compact={true} className="nav-bar">
@@ -115,7 +115,7 @@ const Navbar = ({activeIndex, handleItemClick, scrollTo}) => {
           </Dropdown.Menu>
         </Dropdown>
         <h2 onClick={() => scrollTo("intro")} className="site-name mobile">
-          Brian Nguyen<span className="blinking-cursor">|</span>
+          <span className="brian">Brian Nguyen</span><span className="blinking-cursor">|</span>
         </h2>
       </Responsive>
     </header>

@@ -6,7 +6,7 @@ const Intro = ({navigate}) => {
   return (
     <div id="intro" onMouseOver={navigate}>
       <div className="heading">
-        <Responsive maxWidth={700}>
+        <Responsive maxWidth={800}>
           <h1 className="titles">
             SOFTWARE DEVELOPER
           </h1>
@@ -22,7 +22,7 @@ const Intro = ({navigate}) => {
             Life is about creating yourself."
           </div>
         </Responsive>
-        <Responsive minWidth={701}>
+        <Responsive minWidth={801}>
           <h1 className="titles">
             SOFTWARE DEVELOPER • LIFELONG LEARNER • TECH ENTHUSIAST
           </h1>

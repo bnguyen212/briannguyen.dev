@@ -31,3 +31,27 @@
   margin-right: 10px !important;
   margin-bottom: 10px !important;
 }
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.brian, .section_header {
+  line-height: 1.5;
+}
+
+.brian:hover, .section_header:hover {
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 2s infinite linear;
+  -webkit-animation: hue 2s infinite linear;
+  cursor: pointer;
+}

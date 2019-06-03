@@ -6,7 +6,7 @@ import profile from '../assets/profile.jpg';
 const Bio = () => {
   return (
     <div id="biography">
-      <h1 className="section_header">About Me:</h1>
+      <h1><span className="section_header">About Me</span></h1>
       <img src={profile} className="profile" alt="Brian Nguyen" height="250px" />
       <div className="text-intro loc">
         <Icon fitted={true} size="large" color="red" name="map marker alternate" /> <span className="location">San Francisco, CA</span>

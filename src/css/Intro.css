@@ -22,13 +22,11 @@
 
 .titles {
   font-family: 'Indie Flower', cursive;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-size: 30px;
   margin-bottom: 5%;
   margin-top: 5%;
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+  animation: moveInLeft 2s ease-out;
 }
 
 .quote {
@@ -39,7 +37,7 @@
   animation: moveInRight 2s ease-out;
 }
 
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1401px) {
   .titles {
     font-size: 40px;
   }
@@ -49,14 +47,14 @@
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 851px) {
+@media screen and (max-width: 1100px) and (min-width: 951px) {
   .titles {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width: 850px) and (min-width: 701px),
-(max-width: 350px) {
+@media screen and (max-width: 950px) and (min-width: 801px),
+(max-width: 380px) {
   .titles {
     font-size: 20px;
   }

@@ -32,7 +32,7 @@ header {
 
 .blinking-cursor {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 75;
+  font-weight: 50;
   font-size: 50px;
   color: #2E3D48;
   -webkit-animation: 1s blink step-end infinite;

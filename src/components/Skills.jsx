@@ -154,7 +154,7 @@ const Skills = ({screenWidth, navigate}) => {
   return (
     <div id="skills" onMouseOver={navigate}>
       <div className={screenWidth > 830 ? "category" : "category-mobile"} >
-        <h1 className={"section_header " + (screenWidth > 830 ? 'skills-header' : 'skills-header-mobile')}>Skills</h1>
+        <h1 className={screenWidth > 830 ? 'skills-header' : 'skills-header-mobile'}><span className="section_header">Skills</span></h1>
         <div className="legend" >
           <Button.Group size="medium">
             <Button className="non-click" color="green">Proficient</Button>
