@@ -17,9 +17,9 @@ const Intro = ({navigate}) => {
             TECH ENTHUSIAST
           </h1>
           <div className="quote">
-            "Life isn't about finding yourself.
+            " Life isn't about finding yourself.
             <br />
-            Life is about creating yourself."
+            Life is about creating yourself. "
           </div>
         </Responsive>
         <Responsive minWidth={801}>
@@ -27,7 +27,7 @@ const Intro = ({navigate}) => {
             SOFTWARE DEVELOPER • LIFELONG LEARNER • TECH ENTHUSIAST
           </h1>
           <div className="quote">
-            "Life isn't about finding yourself. Life is about creating yourself."
+            " Life isn't about finding yourself. Life is about creating yourself. "
           </div>
         </Responsive>
       </div>
