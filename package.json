@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "npm": "^6.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
-    "react-scroll": "^1.7.11",
-    "semantic-ui-react": "^0.87.1",
-    "serve": "^11.0.1"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.2.0",
+    "react-scroll": "^1.7.14",
+    "semantic-ui-react": "^0.87.3",
+    "serve": "^11.2.0"
   },
   "scripts": {
     "dev": "react-scripts start",
