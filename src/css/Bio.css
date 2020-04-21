@@ -2,6 +2,7 @@
 .text-intro>*,
 .text-intro>*>* {
   font-size: 15px;
+  line-height: 1.3;
   padding-bottom: 10px;
   text-align: justify;
   color: black;

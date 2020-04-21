@@ -1,3 +1,21 @@
+/* latin */
+@font-face {
+  font-family: 'Indie Flower';
+  src: url(../assets/Indie_Flower/IndieFlower-Regular.ttf) format('truetype');
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url(../assets/Kaushan_Script/KaushanScript-Regular.ttf) format('truetype');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Shadows Into Light';
+  src: url(../assets/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf) format('truetype');
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -42,11 +60,13 @@
   }
 }
 
-.brian, .section_header {
+.brian,
+.section_header {
   line-height: 1.5;
 }
 
-.brian:hover, .section_header:hover {
+.brian:hover,
+.section_header:hover {
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   background-clip: text;
   -webkit-background-clip: text;
