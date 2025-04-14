@@ -12,11 +12,11 @@ const Skills = ({ screenWidth, navigate }) => {
 		],
 		'Programming Languages': [
 			{
-				name: 'JavaScript',
+				name: 'TypeScript',
 				proficient: true
 			},
 			{
-				name: 'TypeScript',
+				name: 'Python',
 				proficient: true
 			},
 			{
@@ -28,62 +28,16 @@ const Skills = ({ screenWidth, navigate }) => {
 				proficient: true
 			},
 			{
-				name: 'Python',
-				proficient: false
-			},
-			{
 				name: 'Java',
 				proficient: false
-			}
-		],
-		Frontend: [
-			{
-				name: 'React & Redux',
-				proficient: true
 			},
 			{
-				name: 'Angular 2',
-				proficient: true
-			},
-			{
-				name: 'GraphQL',
-				proficient: true
-			},
-			{
-				name: 'jQuery',
-				proficient: true
-			},
-			{
-				name: 'Bootstrap',
-				proficient: true
-			},
-			{
-				name: 'D3.js',
+				name: 'Go',
 				proficient: false
-			}
-		],
-		'UI Libraries': [
-			{
-				name: 'Semantic UI',
-				proficient: true
 			},
 			{
-				name: 'Ant Design',
-				proficient: true
-			},
-			{
-				name: 'Clarity Design',
-				proficient: true
-			},
-			{
-				name: 'Material UI',
+				name: 'Ruby',
 				proficient: false
-			}
-		],
-		Mobile: [
-			{
-				name: 'React Native',
-				proficient: true
 			}
 		],
 		Backend: [
@@ -97,34 +51,110 @@ const Skills = ({ screenWidth, navigate }) => {
 			},
 			{
 				name: 'Flask',
-				proficient: false
+				proficient: true
 			},
 			{
 				name: 'FastAPI',
+				proficient: true
+			},
+		],
+		Frontend: [
+			{
+				name: 'React',
+				proficient: true
+			},
+			{
+				name: 'Redux',
+				proficient: true
+			},
+			{
+				name: 'GraphQL',
+				proficient: true
+			},
+			{
+				name: 'Next.js',
+				proficient: true
+			},
+			{
+				name: 'Tailwind CSS',
+				proficient: true
+			},
+			{
+				name: 'jQuery',
+				proficient: true
+			},
+			{
+				name: 'D3.js',
+				proficient: true
+			},
+			{
+				name: 'Angular',
 				proficient: false
 			},
 			{
-				name: 'Django',
+				name: 'Vue',
+				proficient: false
+			},
+		],
+		'UI Libraries': [
+			{
+				name: 'Bootstrap',
+				proficient: true
+			},
+			{
+				name: 'Semantic UI',
+				proficient: true
+			},
+			{
+				name: 'Ant Design',
+				proficient: true
+			},
+			{
+				name: 'Clarity Design',
+				proficient: false
+			},
+			{
+				name: 'Material UI',
+				proficient: false
+			},
+		],
+		Mobile: [
+			{
+				name: 'React Native',
 				proficient: false
 			}
 		],
-		Database: [
+		Desktop: [
 			{
-				name: 'MongoDB',
-				proficient: true
-			},
+				name: 'Electron.js',
+				proficient: false
+			}
+		],
+		Databases: [
 			{
 				name: 'PostgreSQL',
 				proficient: true
 			},
 			{
-				name: 'AWS',
+				name: 'MongoDB',
+				proficient: true
+			},
+			{
+				name: 'BigQuery',
+				proficient: false
+			},
+			{
+				name: 'Redis',
 				proficient: false
 			}
 		],
-		DevOps: [
+		"Tools & Platforms": [
 			{
 				name: 'Git',
+				proficient: true
+			},
+			{
+				name: 'Docker',
 				proficient: true
 			},
 			{
@@ -132,27 +162,17 @@ const Skills = ({ screenWidth, navigate }) => {
 				proficient: true
 			},
 			{
-				name: 'Docker',
+				name: 'Google Cloud Platform',
 				proficient: false
-			}
-		],
-		'Other Tools': [
-			{
-				name: 'Asana',
-				proficient: true
 			},
 			{
-				name: 'Airtable',
-				proficient: true
-			},
-			{
-				name: 'Agile / Scrum',
-				proficient: true
-			},
-			{
-				name: 'Sketch',
+				name: 'Kubernetes',
 				proficient: false
-			}
+			},
+			{
+				name: 'Temporal',
+				proficient: false
+			},
 		]
 	};
 
