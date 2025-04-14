@@ -30,7 +30,7 @@ const Navbar = ({ activeIndex, handleItemClick, scrollTo }) => {
 			icon: 'address card'
 		},
 		{
-			url: '//dropbox.com/s/8ghkc1oufkyqk0m/BrianNguyen_Resume.pdf',
+			url: 'https://resume.briannguyen.dev',
 			display: 'Résumé',
 			icon: 'file alternate'
 		}
