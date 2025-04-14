@@ -8,13 +8,11 @@ const Interests = () => {
 		'UI/UX Design',
 		'Data Visualization',
 		'Education',
-		'Health Tech',
+		'Healthcare',
 		'Social Impact',
 		'Foreign Languages',
-		'Photography',
 		'Video Games',
 		'Fashion',
-		'Real Estate'
 	];
 
 	return (
