@@ -15,47 +15,16 @@ const Bio = () => {
 				<span className="location">San Francisco, CA</span>
 			</div>
 			<div className="text-intro">
-				I graduated from the{' '}
-				<a className="url" href="//www.upenn.edu" target="_blank" rel="noopener noreferrer">
-					<strong>University of Pennsylvania</strong>
-				</a>{' '}
-				with a BA in Economics and Linguistics. I previously worked in IT Support and EB-5 Investor
-				Relations before switching to Software Development. My journey as a developer began in 2018
-				after an immersive semester of software engineering at the{' '}
-				<strong>Horizons School of Technology</strong>, where I also worked as a Junior Instructor
-				for the subsequent summer cohorts.
+				Hey, I’m Brian — a senior software engineer with a background in Economics and Linguistics.
 			</div>
 			<div className="text-intro">
-				As a software engineer, I aspire to build sustainable products that increase human
-				productivity and facilitate personal and/or collective growth. I am especially fond of apps
-				that allow people to be more efficient in their daily lives, hence my two favorites are{' '}
-				<a className="url" href="//1password.com" target="_blank" rel="noopener noreferrer">
-					<i>1Password</i>
-				</a>{' '}
-				and{' '}
-				<a className="url" href="//www.grammarly.com" target="_blank" rel="noopener noreferrer">
-					<i>Grammarly</i>
-				</a>
-				. A few of the most exciting projects I have worked on are definitely ones I still
-				frequently use 'til this day, be sure to{' '}
-				<strong>
-					check out my Chrome extension <i>JobMate</i> below
-				</strong>
-				!
+				Before diving into software development, I worked in IT Support and Investor Relations. These days, I’m driven to build practical tools that help others do more, learn faster, and grow together. I’m especially drawn to tools that make everyday life more efficient — think 1Password or Grammarly. That same spirit inspired some of my favorite side projects, <strong>check out my Chrome extension <i>JobMate</i> below</strong>!
 			</div>
 			<div className="text-intro">
-				In my professional experience, I often gravitate towards frontend development simply because
-				I enjoy creating beautiful UIs that enhance user workflows. My friends describe me as a
-				5-year-old at heart, always curious to learn something new everyday, hence I am also looking
-				for opportunities to get involved on the backend and infrastructure sides whenever I can.
-				Let’s chat if you share any of my interests listed below and/or have a project idea you
-				would like to collaborate on (extra kudos if you want to discuss that over boba tea)!
+				I started my career as a frontend developer at a quantum computing startup, where I transformed complex, error-prone scripts into a user-friendly web application that helped physicists streamline their daily workflows. Most recently, I’ve been building integration solutions at a healthcare automation startup, improving how health systems operate and deliver care. I’ve taken products from 0 to 1 as a solo engineer and led small teams to build scalable, maintainable systems in fast-paced environments. Across these roles, I’ve developed a strong focus on thoughtful design, clean architecture, and solving real-world problems with practical solutions.
 			</div>
 			<div className="text-intro">
-				<strong>
-					I am actively seeking full-time SWE opportunities (frontend & full-stack) and would love
-					to chat further if your company is hiring!
-				</strong>
+				If you share any of my interests or have a project idea in mind, let’s connect — <strong>and yes, I’m currently searching for my next opportunity</strong>!
 			</div>
 		</div>
 	);
